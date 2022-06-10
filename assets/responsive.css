@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {
+
+    /* .container-contato {
+        height: inherit;
+    } */
+
+    .container-contato-list {
+        transform: translateX(10%);
+        flex-wrap: wrap;
+        margin: 2rem 0;
+    }
+
+    .container-contato-input {
+        margin: 2rem 0;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .container-contato {
+        height: inherit;
+    }
+
+    .container-contato {
+        flex-direction: column-reverse;
+    }
+
+    .container-contato-list {
+        transform: translateX(0);
+        flex-wrap: wrap;
+    }
+
+    .container-contato-input h2 {
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .container-contato-input textarea, .container-contato-input input {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .menu ul {
+        display: none;
+    }
+
+    .menu-amburguer {
+        display: block;
+        width: 3rem;
+        height: 2rem;
+        margin-right: 3rem;
+    }
+    
+    .menu-amburguer span {
+        position: absolute;
+        height: 4px;
+        background-color: #fff;
+        width: 3rem;
+    }
+    
+    .menu-amburguer :nth-child(1) {
+        margin-top: .2rem;
+    }
+    
+    .menu-amburguer :nth-child(2) {
+        margin-top: .8rem;
+    }
+    
+    .menu-amburguer :nth-child(3) {
+        margin-top: 1.5rem;
+    }
+    
+    
+    .menu-amburguer:hover {
+        cursor: pointer;
+    }
+    
+    .menu-amburguer:hover :nth-child(1) {
+        top: 1.2rem;
+        transform: rotate(45deg);
+    }
+    
+    .menu-amburguer:hover :nth-child(2) {
+        display: none;
+    }
+    
+    .menu-amburguer:hover :nth-child(3) {
+        transform: rotate(-45deg);
+        top: -.1rem;
+    }
+
+}
+
+@media (max-width: 550px) {
+    
+    .container-contato {
+        height: auto;
+    }
+
+    .container-contato-list ul {
+        width: 5rem;
+        margin-left: -5rem;
+        grid-template-columns: 1fr;
+    }
+
+    .container-contato-input h2 {
+        font-size: .7rem;
+    }
+
+    .menu img {
+        width: 6rem;
+    }
+
+    .menu-amburguer span {
+        width: 2.5rem;
+    }
+}
